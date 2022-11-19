@@ -162,7 +162,7 @@ span {
 #enter::before {
   content: "";
   position: absolute;
-  width: 75%;
+  width: 80px;
   height: 62px;
   background-color: inherit;
 
