@@ -48,7 +48,7 @@ body {
   width: 100%;
 }
 
-#arrow-up {
+#arrowup {
   grid-column: span 2;
   width: calc(50% - 5px);
 }
@@ -133,27 +133,16 @@ span {
   width: 70px;
 }
 
-#num-plus,
-#num-enter {
-  grid-row: span 2;
-  height: calc(100% - 7px);
-}
-
-#num-zero {
-  grid-column: span 2;
-  width: calc(100% - 7px);
-}
-
 #tab {
   width: 90px;
 }
 
-#caps-lock {
+#capslock {
   width: 113px;
 }
 
 #backspace,
-#left-enter {
+#enter {
   flex-grow: 1;
 }
 
@@ -162,12 +151,12 @@ span {
   cursor: pointer;
 }
 
-#left-enter {
+#enter {
   position: relative;
   border-bottom-right-radius: 0;
 }
 
-#left-enter::before {
+#enter::before {
   content: "";
   position: absolute;
   width: 75%;
@@ -207,4 +196,15 @@ span {
 
 .arrow {
   font-size: 0.95rem;
+}
+
+#numpadadd,
+#numpadenter {
+  grid-row: span 2;
+  height: calc(100% - 7px);
+}
+
+#numpad0 {
+  grid-column: span 2;
+  width: calc(100% - 7px);
 }
