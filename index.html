@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Keyboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <section class="grids">
+      <div class="left-section">
+        <div class="fn-section">
+          <div class="key" id="escape">Esc</div>
+          <div class="fn-half">
+            <div class="key" id="f1">F1</div>
+            <div class="key" id="f2">F2</div>
+            <div class="key" id="f3">F3</div>
+            <div class="key" id="f4">F4</div>
+          </div>
+
+          <div class="fn-half">
+            <div class="key" id="f5">F5</div>
+            <div class="key" id="f6">F6</div>
+            <div class="key" id="f7">F7</div>
+            <div class="key" id="f8">F8</div>
+          </div>
+
+          <div class="fn-half">
+            <div class="key" id="f9">F9</div>
+            <div class="key" id="f10">F10</div>
+            <div class="key" id="f11">F11</div>
+            <div class="key" id="f12">F12</div>
+          </div>
+
+          <div class="fn-half">
+            <div class="key"><span>PrtSc</span><span>SysRq</span></div>
+            <div class="key"><span>Scroll</span><span>Lock</span></div>
+            <div class="key"><span>Page</span><span>Break</span></div>
+          </div>
+        </div>
+
+        <div class="left-key-container">
+          <div class="left-keys">
+            <div class="number-section">
+              <div class="key" id="tilde"><span>~</span><span>`</span></div>
+              <div class="key"><span>!</span><span>1</span></div>
+              <div class="key"><span>@</span><span>2</span></div>
+              <div class="key"><span>#</span><span>3</span></div>
+              <div class="key"><span>$</span><span>4</span></div>
+              <div class="key"><span>%</span><span>5</span></div>
+              <div class="key"><span>^</span><span>6</span></div>
+              <div class="key"><span>&</span><span>7</span></div>
+              <div class="key"><span>*</span><span>8</span></div>
+              <div class="key"><span>(</span><span>9</span></div>
+              <div class="key"><span>)</span><span>0</span></div>
+              <div class="key"><span>_</span><span>-</span></div>
+              <div class="key"><span>+</span><span>&equals;</span></div>
+              <div class="key" id="backspace">BackSpace</div>
+            </div>
+            <div class="upper-row">
+              <div class="key" id="tab">Tab</div>
+              <div class="key">Q</div>
+              <div class="key">W</div>
+              <div class="key">E</div>
+              <div class="key">R</div>
+              <div class="key">T</div>
+              <div class="key">Y</div>
+              <div class="key">U</div>
+              <div class="key">I</div>
+              <div class="key">O</div>
+              <div class="key">P</div>
+              <div class="key"><span>{</span><span>[</span></div>
+              <div class="key"><span>}</span><span>]</span></div>
+              <div class="key enter" id="left-enter">Enter</div>
+            </div>
+            <div class="middle-row">
+              <div class="key" id="caps-lock">Caps Lock</div>
+              <div class="key">A</div>
+              <div class="key">S</div>
+              <div class="key">D</div>
+              <div class="key">F</div>
+              <div class="key">G</div>
+              <div class="key">H</div>
+              <div class="key">J</div>
+              <div class="key">K</div>
+              <div class="key">L</div>
+              <div class="key"><span>:</span><span>;</span></div>
+              <div class="key"><span>"</span><span>'</span></div>
+              <div class="key"><span>|</span><span>\</span></div>
+            </div>
+            <div class="lower-row">
+              <div class="key shift" id="left-shift">Shift</div>
+              <div class="key">Z</div>
+              <div class="key">X</div>
+              <div class="key">C</div>
+              <div class="key">V</div>
+              <div class="key">B</div>
+              <div class="key">N</div>
+              <div class="key">M</div>
+              <div class="key"><span>&lt;</span><span>,</span></div>
+              <div class="key"><span>&gt;</span><span>.</span></div>
+              <div class="key"><span>?</span><span>/</span></div>
+              <div class="key shift">Shift</div>
+            </div>
+
+            <div class="last-row">
+              <div class="key ctrl" id="left-ctrl">Ctrl</div>
+              <div class="key">Fn</div>
+              <div class="key">Win</div>
+              <div class="key alt" id="left-alt">Alt</div>
+              <div class="key" id="space">Space</div>
+              <div class="key alt" id="right-alt">Alt</div>
+              <div class="key" id="palette">[]</div>
+              <div class="key ctrl" id="right-ctrl">Ctrl</div>
+
+              <div class="key arrow">
+                <i class="bi bi-brightness-low-fill"
+                  ><i class="bi bi-caret-left-fill"> </i
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="left-extra">
+            <div class="key">Home</div>
+            <div class="key">End</div>
+            <div class="key">Insert</div>
+            <div class="key"><span>Page</span><span>Up</span></div>
+            <div class="key">Delete</div>
+            <div class="key"><span>Page</span><span>Down</span></div>
+            <div class="key arrow" id="arrow-up">
+              <i class="bi bi-caret-up-fill">
+                <i class="bi bi-volume-up-fill"></i
+              ></i>
+            </div>
+
+            <div class="key arrow">
+              <i class="bi bi-caret-down-fill">
+                <i class="bi bi-volume-down-fill"></i
+              ></i>
+            </div>
+            <div class="key arrow">
+              <i class="bi bi-caret-up-fill">
+                <i class="bi bi-brightness-high-fill"></i
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="lock">
+          <div class="den active">
+            <div class="num active"></div>
+            <div>Num</div>
+          </div>
+          <div class="den">
+            <div class="caps"></div>
+            <div>Caps</div>
+          </div>
+          <div class="den">
+            <div class="scroll"></div>
+            <div>Scroll</div>
+          </div>
+        </div>
+
+        <div class="numpad-section">
+          <div class="key"><span>Num</span><span>Lock</span></div>
+          <div class="key">/</div>
+          <div class="key">*</div>
+          <div class="key">-</div>
+
+          <div class="key"><span>7</span><span>Home</span></div>
+          <div class="key">
+            <span>8</span><span><i class="bi bi-caret-up-fill"></i></span>
+          </div>
+          <div class="key"><span>9</span><span>PgUp</span></div>
+          <div class="key" id="num-plus">+</div>
+
+          <div class="key">
+            <span>4</span><span><i class="bi bi-caret-left-fill"></i></span>
+          </div>
+          <div class="key"><span>5</span><span>&nbsp;</span></div>
+          <div class="key">
+            <span>6</span><span><i class="bi bi-caret-right-fill"></i></span>
+          </div>
+
+          <div class="key"><span>1</span><span>End</span></div>
+          <div class="key">
+            <span>2</span><span><i class="bi bi-caret-down-fill"></i></span>
+          </div>
+          <div class="key"><span>3</span><span>PgDn</span></div>
+          <div class="key" id="num-enter">Enter</div>
+
+          <div class="key" id="num-zero"><span>0</span><span>Ins</span></div>
+          <div class="key"><span>.</span><span>Del</span></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
